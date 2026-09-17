@@ -25,16 +25,3 @@ advisor = NigerianLawAdvisor(
     prompt_builder=PromptBuilder(),
     generator=Generator()
 )
-
-
-while True:
-
-    question = input("\nQuestion: ")
-
-    if question.lower() in {"exit", "quit"}:
-        break
-
-    answer = advisor.ask(question)
-
-    print("\nAnswer:\n")
-    print(answer)
