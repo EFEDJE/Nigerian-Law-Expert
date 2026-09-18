@@ -12,7 +12,7 @@ from app.schemas import QuestionRequest
 app = FastAPI(title='Nigerian Law Expert API')
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173", 'https://nigerian-law-expert.onrender.com'],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
